@@ -7,7 +7,7 @@
 <meta name="description" content="Paras & Jothi — Save the Date, 2 December 2026, Dehradun.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap');
-:root{--ink:#0c1c18;--pine:#14302a;--ivory:#f5eddf;--gold:#d6b26e;--gold2:#f1d9a0;--marigold:#f0a030;--rose:#b4443a}
+:root{--ink:#0a1530;--pine:#112a52;--ivory:#f5eddf;--gold:#d6b26e;--gold2:#f1d9a0;--marigold:#f0a030;--rose:#b4443a}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Jost,sans-serif;background:var(--ink);color:var(--ivory);overflow-x:hidden}
@@ -15,7 +15,7 @@ body{font-family:Jost,sans-serif;background:var(--ink);color:var(--ivory);overfl
 
 /* HERO */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:70px 16px 60px;overflow:hidden;
-background:radial-gradient(ellipse at 50% 0,#1d4036 0,var(--ink) 70%)}
+background:radial-gradient(ellipse at 50% 0,var(--glow,#1c3a6e) 0,var(--ink) 70%)}
 .hero:before{content:"";position:absolute;inset:0;opacity:.07;background:
 linear-gradient(45deg,var(--gold) 1px,transparent 1px) 0 0/34px 34px,
 linear-gradient(-45deg,var(--gold) 1px,transparent 1px) 0 0/34px 34px}
@@ -26,17 +26,19 @@ filter:drop-shadow(0 6px 8px rgba(0,0,0,.45))}
 .garland:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);opacity:.7}
 .frame{position:relative;z-index:3;padding:9px;border:1px solid rgba(214,178,110,.65);border-radius:999px 999px 0 0;width:min(440px,92vw)}
 .arch{position:relative;height:min(700px,82svh);min-height:570px;border-radius:999px 999px 0 0;overflow:hidden;border:1px solid rgba(214,178,110,.35);
-background:linear-gradient(#0a1613 0,#12302a 55%,#25483b 100%);text-align:center}
+background:linear-gradient(var(--s1,#060e24) 0,var(--s2,#0f2652) 55%,var(--s3,#21457e) 100%);text-align:center}
 .stars{position:absolute;inset:0;background:
 radial-gradient(circle at 18% 22%,#fff 0 1px,transparent 2px),radial-gradient(circle at 82% 14%,#fff 0 1px,transparent 2px),
 radial-gradient(circle at 70% 36%,#fff 0 1px,transparent 2px),radial-gradient(circle at 30% 44%,#fff 0 1px,transparent 2px);
 background-size:140px 120px,190px 150px,230px 170px,170px 190px;opacity:.55;animation:tw 4s ease-in-out infinite alternate}
 @keyframes tw{to{opacity:.2}}
-.moon{position:absolute;top:4%;left:50%;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff7dc,var(--gold2));box-shadow:0 0 40px 14px rgba(241,217,160,.28),0 0 120px 50px rgba(241,217,160,.12)}
+.sun{position:absolute;top:57%;left:18%;width:68px;height:68px;margin-left:-34px;border-radius:50%;background:radial-gradient(circle at 40% 38%,#fffbe0,#ffd37a 45%,#ff9a45 100%);box-shadow:0 0 50px 20px rgba(255,170,90,.55),0 0 140px 70px rgba(255,130,100,.28);will-change:top,left,opacity}
+.skystars{position:absolute;inset:0;opacity:0}
+.moon{position:absolute;top:86%;left:80%;opacity:0;will-change:top,left,opacity;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff7dc,var(--gold2));box-shadow:0 0 40px 14px rgba(241,217,160,.28),0 0 120px 50px rgba(241,217,160,.12)}
 .ridge{position:absolute;left:-10%;width:120%;bottom:0;will-change:transform}
-.r1{height:46%;background:#1f4036;clip-path:polygon(0 100%,0 55%,14% 30%,26% 52%,40% 12%,55% 46%,68% 22%,82% 50%,100% 28%,100% 100%)}
-.r2{height:34%;background:#14302a;clip-path:polygon(0 100%,0 48%,18% 62%,34% 24%,52% 58%,70% 30%,86% 56%,100% 40%,100% 100%)}
-.r3{height:20%;background:#0b1916;clip-path:polygon(0 100%,0 40%,22% 62%,45% 30%,66% 60%,88% 34%,100% 52%,100% 100%)}
+.r1{height:46%;background:var(--r1,#1f3a6b);clip-path:polygon(0 100%,0 55%,14% 30%,26% 52%,40% 12%,55% 46%,68% 22%,82% 50%,100% 28%,100% 100%)}
+.r2{height:34%;background:var(--r2,#142a52);clip-path:polygon(0 100%,0 48%,18% 62%,34% 24%,52% 58%,70% 30%,86% 56%,100% 40%,100% 100%)}
+.r3{height:20%;background:var(--r3,#0a1530);clip-path:polygon(0 100%,0 40%,22% 62%,45% 30%,66% 60%,88% 34%,100% 52%,100% 100%)}
 .snow{position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(241,217,160,.08))}
 .hero-text{position:absolute;left:0;right:0;top:14%;padding:0 16px;z-index:4;text-shadow:0 2px 20px #000}
 .shubh{font-family:'Tiro Devanagari Hindi',serif;font-size:24px;color:var(--gold);margin-bottom:6px}
@@ -65,7 +67,7 @@ h2 em{color:var(--rose)}
 .orn{display:flex;align-items:center;justify-content:center;gap:14px;margin:34px auto;color:var(--gold);max-width:260px}
 .orn:before,.orn:after{content:"";flex:1;height:1px;background:currentColor;opacity:.6}
 .copy{max-width:540px;margin:0 auto;font-family:"Cormorant Garamond",serif;font-size:clamp(21px,4.6vw,27px);line-height:1.4}
-.light{background:var(--ivory);color:#1d2a25}
+.light{background:var(--ivory);color:#14213d}
 .light .eyebrow{color:#9a7a3a}
 .light .orn{color:#9a7a3a}
 .dark{background:linear-gradient(var(--ink),var(--pine))}
@@ -79,12 +81,12 @@ h2 em{color:var(--rose)}
 .card h3{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(34px,8vw,48px);line-height:1;margin-top:8px}
 .card p{font-family:"Cormorant Garamond",serif;font-size:23px;margin-top:16px;color:#4b4638}
 .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.btn{padding:14px 22px;font:500 10px Jost,sans-serif;letter-spacing:3px;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid #1d2a25;background:#1d2a25;color:var(--ivory);transition:.25s}
-.btn.alt{background:transparent;color:#1d2a25}
+.btn{padding:14px 22px;font:500 10px Jost,sans-serif;letter-spacing:3px;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid #14213d;background:#14213d;color:var(--ivory);transition:.25s}
+.btn.alt{background:transparent;color:#14213d}
 .btn:hover{background:var(--rose);border-color:var(--rose);color:#fff}
 .sign{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;margin-top:38px;color:var(--gold2)}
 .dark .copy{color:#d9d0c2}
-.music{position:fixed;right:16px;bottom:16px;z-index:20;border:1px solid rgba(214,178,110,.6);background:rgba(12,28,24,.7);backdrop-filter:blur(8px);color:var(--gold2);border-radius:50%;width:46px;height:46px;font-size:15px;cursor:pointer}
+.music{position:fixed;right:16px;bottom:16px;z-index:20;border:1px solid rgba(214,178,110,.6);background:rgba(10,21,48,.7);backdrop-filter:blur(8px);color:var(--gold2);border-radius:50%;width:46px;height:46px;font-size:15px;cursor:pointer}
 .music.hint{animation:ring 2s infinite}
 @keyframes ring{0%{box-shadow:0 0 0 0 rgba(214,178,110,.6)}100%{box-shadow:0 0 0 16px rgba(214,178,110,0)}}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
@@ -102,21 +104,21 @@ h2 em{color:var(--rose)}
     <i style="--x:76%;--d:9.5s;--t:4s;--s:26px"></i><i style="--x:90%;--d:11s;--t:2s;--s:-20px"></i>
   </div>
   <div class="frame"><div class="arch" id="arch">
-    <div class="stars"></div><div class="moon"></div>
+    <div class="skystars" id="skystars"><div class="stars"></div></div><div class="sun" id="sun"></div><div class="moon" id="moon"></div>
     <div class="ridge r1" data-s=".05"></div><div class="ridge r2" data-s=".1"></div><div class="ridge r3" data-s=".16"></div><div class="snow"></div>
     <div class="diya" style="left:4%"></div><div class="diya" style="right:4%"></div>
     <div class="couple">
       <svg viewBox="0 -16 300 216" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Golden wedding mandap with a kalash">
         <defs>
-          <linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#2d5a4a"/><stop offset=".55" stop-color="#14302a"/><stop offset="1" stop-color="#0a1613"/></linearGradient>
+          <linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#3a5f9e"/><stop offset=".55" stop-color="#112a52"/><stop offset="1" stop-color="#070f26"/></linearGradient>
           <linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6e2b0"/><stop offset="1" stop-color="#a97f35"/></linearGradient>
           <radialGradient id="gl" cx=".5" cy=".7" r=".6"><stop offset="0" stop-color="#ffcf70" stop-opacity=".7"/><stop offset="1" stop-color="#ffcf70" stop-opacity="0"/></radialGradient>
         </defs>
         <ellipse cx="150" cy="130" rx="140" ry="100" fill="url(#gl)"/>
         <g stroke="#d6b26e" stroke-width="1.1" stroke-linejoin="round">
-          <rect x="14" y="184" width="272" height="10" fill="#0b1916"/><rect x="26" y="176" width="248" height="8" fill="#14302a"/>
-          <rect x="44" y="70" width="12" height="106" fill="url(#pg)"/><rect x="40" y="64" width="20" height="7" fill="#0b1916"/><rect x="40" y="170" width="20" height="7" fill="#0b1916"/><path d="M47 76V168M53 76V168" stroke-opacity=".35" fill="none"/><rect x="94" y="70" width="12" height="106" fill="url(#pg)"/><rect x="90" y="64" width="20" height="7" fill="#0b1916"/><rect x="90" y="170" width="20" height="7" fill="#0b1916"/><path d="M97 76V168M103 76V168" stroke-opacity=".35" fill="none"/><rect x="194" y="70" width="12" height="106" fill="url(#pg)"/><rect x="190" y="64" width="20" height="7" fill="#0b1916"/><rect x="190" y="170" width="20" height="7" fill="#0b1916"/><path d="M197 76V168M203 76V168" stroke-opacity=".35" fill="none"/><rect x="244" y="70" width="12" height="106" fill="url(#pg)"/><rect x="240" y="64" width="20" height="7" fill="#0b1916"/><rect x="240" y="170" width="20" height="7" fill="#0b1916"/><path d="M247 76V168M253 76V168" stroke-opacity=".35" fill="none"/>
-          <rect x="30" y="58" width="240" height="8" fill="#0b1916"/><rect x="30" y="56" width="240" height="3" fill="url(#gd)" stroke="none"/>
+          <rect x="14" y="184" width="272" height="10" fill="#0a1530"/><rect x="26" y="176" width="248" height="8" fill="#112a52"/>
+          <rect x="44" y="70" width="12" height="106" fill="url(#pg)"/><rect x="40" y="64" width="20" height="7" fill="#0a1530"/><rect x="40" y="170" width="20" height="7" fill="#0a1530"/><path d="M47 76V168M53 76V168" stroke-opacity=".35" fill="none"/><rect x="94" y="70" width="12" height="106" fill="url(#pg)"/><rect x="90" y="64" width="20" height="7" fill="#0a1530"/><rect x="90" y="170" width="20" height="7" fill="#0a1530"/><path d="M97 76V168M103 76V168" stroke-opacity=".35" fill="none"/><rect x="194" y="70" width="12" height="106" fill="url(#pg)"/><rect x="190" y="64" width="20" height="7" fill="#0a1530"/><rect x="190" y="170" width="20" height="7" fill="#0a1530"/><path d="M197 76V168M203 76V168" stroke-opacity=".35" fill="none"/><rect x="244" y="70" width="12" height="106" fill="url(#pg)"/><rect x="240" y="64" width="20" height="7" fill="#0a1530"/><rect x="240" y="170" width="20" height="7" fill="#0a1530"/><path d="M247 76V168M253 76V168" stroke-opacity=".35" fill="none"/>
+          <rect x="30" y="58" width="240" height="8" fill="#0a1530"/><rect x="30" y="56" width="240" height="3" fill="url(#gd)" stroke="none"/>
           <path d="M38 56Q38 36 62 30Q86 36 86 56Z" fill="url(#pg)"/><path d="M214 56Q214 36 238 30Q262 36 262 56Z" fill="url(#pg)"/>
           <path d="M92 56Q92 20 150 14Q208 20 208 56Z" fill="url(#pg)"/>
           <path d="M98 47Q150 38 202 47M104 38Q150 29 196 38" fill="none" stroke-opacity=".5"/>
@@ -195,7 +197,7 @@ h2 em{color:var(--rose)}
 </main>
 
 <button class="music hint" id="music" aria-label="Music">♪</button>
-<audio id="song" src="music.mp3" loop preload="none"></audio>
+<audio id="song" src="music.mp3" loop preload="auto" playsinline></audio>
 
 <script>
 const wedding=new Date("2026-12-02T00:00:00+05:30").getTime(),$=id=>document.getElementById(id);
@@ -213,10 +215,42 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 
 const song=$("song"),mb=$("music");
-mb.addEventListener("click",()=>{
- if(song.paused){song.play().then(()=>{mb.textContent="❚❚";mb.classList.remove("hint")}).catch(()=>{mb.textContent="✕";setTimeout(()=>mb.textContent="♪",1500)})}
- else{song.pause();mb.textContent="♪"}
+let userPaused=false,fadeId=0;
+function fade(to,ms=2500){cancelAnimationFrame(fadeId);const from=song.volume,t0=performance.now();
+ (function step(t){const k=Math.min(1,(t-t0)/ms);song.volume=from+(to-from)*k;if(k<1)fadeId=requestAnimationFrame(step)})(t0)}
+function sync(){const on=!song.paused&&!song.muted;mb.textContent=on?"❚❚":"♪";mb.classList.toggle("hint",!on)}
+["play","pause","volumechange"].forEach(e=>song.addEventListener(e,sync));
+function playLoud(){song.muted=false;song.volume=0;return song.play().then(()=>fade(1))}
+const gestures=["pointerup","touchend","click","keydown"];
+function unlock(){if(userPaused)return;gestures.forEach(e=>removeEventListener(e,unlock));
+ playLoud().catch(()=>{})}
+// try to start with sound straight away; if the browser blocks it, play silently and unmute on the first tap/click/key
+playLoud().catch(()=>{song.muted=true;song.play().catch(()=>{});gestures.forEach(e=>addEventListener(e,unlock,{passive:true}))});
+mb.addEventListener("click",e=>{e.stopPropagation();
+ if(!song.paused&&!song.muted){userPaused=true;song.pause()}
+ else{userPaused=false;gestures.forEach(g=>removeEventListener(g,unlock));playLoud().catch(()=>{})}
 });
+
+/* DAWN -> ROYAL NIGHT cycle: sky, mountains, sun and moon blend smoothly on their own */
+const hero=document.querySelector(".hero"),sun=$("sun"),moon=$("moon"),sstars=$("skystars");
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const mix=(a,b,t)=>{const A=hex(a),B=hex(b);return"rgb("+A.map((v,i)=>Math.round(v+(B[i]-v)*t)).join(",")+")"};
+const ss=(a,b,x)=>{x=Math.min(1,Math.max(0,(x-a)/(b-a)));return x*x*(3-2*x)};
+const DAWN={s1:"#3b4a8f",s2:"#c85f86",s3:"#ffb877",r1:"#4b4079",r2:"#352f66",r3:"#1c1a3c",glow:"#5b3f7a"};
+const NIGHT={s1:"#060e24",s2:"#0f2652",s3:"#21457e",r1:"#1f3a6b",r2:"#142a52",r3:"#0a1530",glow:"#1c3a6e"};
+const LOOP=true,PERIOD=52000; // set LOOP=false to dawn -> night once and stay on night
+function apply(p){
+ for(const k in DAWN)hero.style.setProperty("--"+k,mix(DAWN[k],NIGHT[k],p));
+ const q=ss(0,.85,p);
+ sun.style.left=(18+62*q)+"%";sun.style.top=(57+33*q)+"%";sun.style.opacity=1-ss(.7,.95,p);
+ moon.style.left=(80-30*ss(.45,1,p))+"%";moon.style.top=(86-82*ss(.2,1,p))+"%";moon.style.opacity=ss(.3,.7,p);
+ sstars.style.opacity=ss(.35,.95,p);
+}
+function cycle(t){const u=(t%PERIOD)/PERIOD;
+ if(u<.06)return 0;if(u<.42)return ss(0,1,(u-.06)/.36);if(u<.70)return 1;if(u<.96)return 1-ss(0,1,(u-.70)/.26);return 0}
+if(matchMedia("(prefers-reduced-motion:reduce)").matches){apply(1)}
+else{const t0=performance.now();
+ (function frame(now){const t=now-t0;apply(LOOP?cycle(t):(t<18000?ss(0,1,Math.max(0,t-3000)/15000):1));requestAnimationFrame(frame)})(t0)}
 </script>
 </body>
 </html>
