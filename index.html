@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paras & Jothi — Save the Date</title>
+<meta name="description" content="Paras & Jothi — Save the Date, 2 December 2026, Dehradun.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap');
+:root{--ink:#0c1c18;--pine:#14302a;--ivory:#f5eddf;--gold:#d6b26e;--gold2:#f1d9a0;--marigold:#f0a030;--rose:#b4443a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Jost,sans-serif;background:var(--ink);color:var(--ivory);overflow-x:hidden}
+.serif{font-family:"Cormorant Garamond",serif}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:70px 16px 60px;overflow:hidden;
+background:radial-gradient(ellipse at 50% 0,#1d4036 0,var(--ink) 70%)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.07;background:
+linear-gradient(45deg,var(--gold) 1px,transparent 1px) 0 0/34px 34px,
+linear-gradient(-45deg,var(--gold) 1px,transparent 1px) 0 0/34px 34px}
+.garland{position:absolute;top:0;left:0;right:0;height:46px;z-index:6;
+background:radial-gradient(circle at 16px 18px,var(--marigold) 0 9px,transparent 10px) 0 0/32px 40px repeat-x,
+radial-gradient(circle at 32px 30px,#e0661e 0 8px,transparent 9px) 0 0/32px 40px repeat-x;
+filter:drop-shadow(0 6px 8px rgba(0,0,0,.45))}
+.garland:before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);opacity:.7}
+.frame{position:relative;z-index:3;padding:9px;border:1px solid rgba(214,178,110,.65);border-radius:999px 999px 0 0;width:min(440px,92vw)}
+.arch{position:relative;height:min(700px,82svh);min-height:570px;border-radius:999px 999px 0 0;overflow:hidden;border:1px solid rgba(214,178,110,.35);
+background:linear-gradient(#0a1613 0,#12302a 55%,#25483b 100%);text-align:center}
+.stars{position:absolute;inset:0;background:
+radial-gradient(circle at 18% 22%,#fff 0 1px,transparent 2px),radial-gradient(circle at 82% 14%,#fff 0 1px,transparent 2px),
+radial-gradient(circle at 70% 36%,#fff 0 1px,transparent 2px),radial-gradient(circle at 30% 44%,#fff 0 1px,transparent 2px);
+background-size:140px 120px,190px 150px,230px 170px,170px 190px;opacity:.55;animation:tw 4s ease-in-out infinite alternate}
+@keyframes tw{to{opacity:.2}}
+.moon{position:absolute;top:4%;left:50%;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff7dc,var(--gold2));box-shadow:0 0 40px 14px rgba(241,217,160,.28),0 0 120px 50px rgba(241,217,160,.12)}
+.ridge{position:absolute;left:-10%;width:120%;bottom:0;will-change:transform}
+.r1{height:46%;background:#1f4036;clip-path:polygon(0 100%,0 55%,14% 30%,26% 52%,40% 12%,55% 46%,68% 22%,82% 50%,100% 28%,100% 100%)}
+.r2{height:34%;background:#14302a;clip-path:polygon(0 100%,0 48%,18% 62%,34% 24%,52% 58%,70% 30%,86% 56%,100% 40%,100% 100%)}
+.r3{height:20%;background:#0b1916;clip-path:polygon(0 100%,0 40%,22% 62%,45% 30%,66% 60%,88% 34%,100% 52%,100% 100%)}
+.snow{position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(241,217,160,.08))}
+.hero-text{position:absolute;left:0;right:0;top:14%;padding:0 16px;z-index:4;text-shadow:0 2px 20px #000}
+.shubh{font-family:'Tiro Devanagari Hindi',serif;font-size:24px;color:var(--gold);margin-bottom:6px}
+.kicker{font-size:10px;letter-spacing:6px;color:var(--gold2);margin-bottom:12px}
+.couple{position:absolute;z-index:4;left:50%;bottom:1%;width:min(270px,70%);transform:translateX(-50%);filter:drop-shadow(0 0 18px rgba(241,217,160,.35))}
+.couple svg{display:block;width:100%;height:auto}
+.diya{position:absolute;z-index:4;bottom:2.5%;width:24px;height:11px;border-radius:0 0 24px 24px;background:linear-gradient(#e08a30,#8f4a18)}
+.diya:before{content:"";position:absolute;left:50%;bottom:100%;width:7px;height:14px;margin-left:-3.5px;border-radius:50% 50% 50% 50%/70% 70% 30% 30%;background:radial-gradient(#fff6d0,#ffb52e 60%,transparent);box-shadow:0 0 14px 6px rgba(255,181,46,.55);animation:fl 1.4s ease-in-out infinite alternate}
+@keyframes fl{to{transform:scale(.8,1.15);opacity:.8}}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(52px,13vw,72px);line-height:.88}
+h1 em{display:block;font-size:.36em;color:var(--gold);margin:2px 0}
+.date{margin-top:14px;font-family:"Cormorant Garamond",serif;font-size:24px;letter-spacing:5px}
+.place{font-size:10px;letter-spacing:5px;margin-top:8px;color:var(--gold2);opacity:.85}
+.dust i{position:absolute;bottom:-10px;left:var(--x);width:4px;height:4px;border-radius:50%;background:var(--gold2);box-shadow:0 0 8px 2px rgba(241,217,160,.6);opacity:0;animation:rise var(--d) linear var(--t) infinite;z-index:5}
+@keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-85vh) translateX(var(--s));opacity:0}}
+.scroll{position:absolute;z-index:6;bottom:18px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:4px;opacity:.7}
+.scroll:after{content:"";display:block;width:1px;height:34px;background:var(--gold);margin:10px auto 0;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:.25;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
+
+/* SECTIONS */
+section.block{padding:110px 24px;text-align:center}
+.inner{max-width:760px;margin:0 auto}
+.eyebrow{font-size:10px;letter-spacing:6px;color:var(--gold);margin-bottom:22px}
+h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(44px,9vw,76px);line-height:.95}
+h2 em{color:var(--rose)}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin:34px auto;color:var(--gold);max-width:260px}
+.orn:before,.orn:after{content:"";flex:1;height:1px;background:currentColor;opacity:.6}
+.copy{max-width:540px;margin:0 auto;font-family:"Cormorant Garamond",serif;font-size:clamp(21px,4.6vw,27px);line-height:1.4}
+.light{background:var(--ivory);color:#1d2a25}
+.light .eyebrow{color:#9a7a3a}
+.light .orn{color:#9a7a3a}
+.dark{background:linear-gradient(var(--ink),var(--pine))}
+
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,2.5vw,22px);max-width:560px;margin:46px auto 0}
+.time{border:1px solid rgba(214,178,110,.45);border-radius:999px 999px 14px 14px;padding:22px 4px 16px;background:rgba(255,255,255,.03)}
+.num{font-family:"Cormorant Garamond",serif;font-size:clamp(34px,9vw,58px);line-height:1;color:var(--gold2)}
+.label{font-size:8px;letter-spacing:3px;margin-top:10px;opacity:.65}
+
+.card{max-width:560px;margin:44px auto 0;padding:48px 28px;border:1px solid rgba(154,122,58,.55);border-radius:999px 999px 10px 10px;border-radius:200px 200px 10px 10px;background:#fbf6ec;box-shadow:0 30px 60px -30px rgba(40,30,10,.35)}
+.card h3{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(34px,8vw,48px);line-height:1;margin-top:8px}
+.card p{font-family:"Cormorant Garamond",serif;font-size:23px;margin-top:16px;color:#4b4638}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{padding:14px 22px;font:500 10px Jost,sans-serif;letter-spacing:3px;text-transform:uppercase;text-decoration:none;cursor:pointer;border:1px solid #1d2a25;background:#1d2a25;color:var(--ivory);transition:.25s}
+.btn.alt{background:transparent;color:#1d2a25}
+.btn:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.sign{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;margin-top:38px;color:var(--gold2)}
+.dark .copy{color:#d9d0c2}
+.music{position:fixed;right:16px;bottom:16px;z-index:20;border:1px solid rgba(214,178,110,.6);background:rgba(12,28,24,.7);backdrop-filter:blur(8px);color:var(--gold2);border-radius:50%;width:46px;height:46px;font-size:15px;cursor:pointer}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.dust,.stars{animation:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero" id="top">
+  <div class="garland"></div>
+  <div class="dust" aria-hidden="true">
+    <i style="--x:12%;--d:9s;--t:0s;--s:20px"></i><i style="--x:28%;--d:12s;--t:3s;--s:-24px"></i>
+    <i style="--x:44%;--d:10s;--t:5s;--s:18px"></i><i style="--x:61%;--d:13s;--t:1s;--s:-16px"></i>
+    <i style="--x:76%;--d:9.5s;--t:4s;--s:26px"></i><i style="--x:90%;--d:11s;--t:2s;--s:-20px"></i>
+  </div>
+  <div class="frame"><div class="arch" id="arch">
+    <div class="stars"></div><div class="moon"></div>
+    <div class="ridge r1" data-s=".05"></div><div class="ridge r2" data-s=".1"></div><div class="ridge r3" data-s=".16"></div><div class="snow"></div>
+    <div class="diya" style="left:4%"></div><div class="diya" style="right:4%"></div>
+    <div class="couple">
+      <svg viewBox="0 -16 300 216" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Golden wedding mandap with a kalash">
+        <defs>
+          <linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#2d5a4a"/><stop offset=".55" stop-color="#14302a"/><stop offset="1" stop-color="#0a1613"/></linearGradient>
+          <linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6e2b0"/><stop offset="1" stop-color="#a97f35"/></linearGradient>
+          <radialGradient id="gl" cx=".5" cy=".7" r=".6"><stop offset="0" stop-color="#ffcf70" stop-opacity=".7"/><stop offset="1" stop-color="#ffcf70" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="150" cy="130" rx="140" ry="100" fill="url(#gl)"/>
+        <g stroke="#d6b26e" stroke-width="1.1" stroke-linejoin="round">
+          <rect x="14" y="184" width="272" height="10" fill="#0b1916"/><rect x="26" y="176" width="248" height="8" fill="#14302a"/>
+          <rect x="44" y="70" width="12" height="106" fill="url(#pg)"/><rect x="40" y="64" width="20" height="7" fill="#0b1916"/><rect x="40" y="170" width="20" height="7" fill="#0b1916"/><path d="M47 76V168M53 76V168" stroke-opacity=".35" fill="none"/><rect x="94" y="70" width="12" height="106" fill="url(#pg)"/><rect x="90" y="64" width="20" height="7" fill="#0b1916"/><rect x="90" y="170" width="20" height="7" fill="#0b1916"/><path d="M97 76V168M103 76V168" stroke-opacity=".35" fill="none"/><rect x="194" y="70" width="12" height="106" fill="url(#pg)"/><rect x="190" y="64" width="20" height="7" fill="#0b1916"/><rect x="190" y="170" width="20" height="7" fill="#0b1916"/><path d="M197 76V168M203 76V168" stroke-opacity=".35" fill="none"/><rect x="244" y="70" width="12" height="106" fill="url(#pg)"/><rect x="240" y="64" width="20" height="7" fill="#0b1916"/><rect x="240" y="170" width="20" height="7" fill="#0b1916"/><path d="M247 76V168M253 76V168" stroke-opacity=".35" fill="none"/>
+          <rect x="30" y="58" width="240" height="8" fill="#0b1916"/><rect x="30" y="56" width="240" height="3" fill="url(#gd)" stroke="none"/>
+          <path d="M38 56Q38 36 62 30Q86 36 86 56Z" fill="url(#pg)"/><path d="M214 56Q214 36 238 30Q262 36 262 56Z" fill="url(#pg)"/>
+          <path d="M92 56Q92 20 150 14Q208 20 208 56Z" fill="url(#pg)"/>
+          <path d="M98 47Q150 38 202 47M104 38Q150 29 196 38" fill="none" stroke-opacity=".5"/>
+          <path d="M150 14V0M62 30V20M238 30V20" fill="none"/>
+          <circle cx="150" cy="-3" r="4" fill="url(#gd)"/><circle cx="62" cy="17" r="3" fill="url(#gd)"/><circle cx="238" cy="17" r="3" fill="url(#gd)"/>
+          <rect x="106" y="66" width="88" height="8" fill="#9c3a31"/><path d="M106 74 a11 11 0 0 0 22 0 a11 11 0 0 0 22 0 a11 11 0 0 0 22 0 a11 11 0 0 0 22 0 Z" fill="#b4443a"/><rect x="56" y="66" width="38.0" height="8" fill="#9c3a31"/><path d="M56 74 a9.5 9.5 0 0 0 19.0 0 a9.5 9.5 0 0 0 19.0 0 Z" fill="#b4443a"/><rect x="206" y="66" width="38.0" height="8" fill="#9c3a31"/><path d="M206 74 a9.5 9.5 0 0 0 19.0 0 a9.5 9.5 0 0 0 19.0 0 Z" fill="#b4443a"/>
+        </g>
+        <path d="M117 86V112" stroke="#f0a030" stroke-width="5" stroke-dasharray="0 7" stroke-linecap="round" fill="none"/><circle cx="117" cy="116" r="3.2" fill="#e0661e" stroke="none"/><path d="M139 86V126" stroke="#f0a030" stroke-width="5" stroke-dasharray="0 7" stroke-linecap="round" fill="none"/><circle cx="139" cy="130" r="3.2" fill="#e0661e" stroke="none"/><path d="M161 86V112" stroke="#f0a030" stroke-width="5" stroke-dasharray="0 7" stroke-linecap="round" fill="none"/><circle cx="161" cy="116" r="3.2" fill="#e0661e" stroke="none"/><path d="M183 86V126" stroke="#f0a030" stroke-width="5" stroke-dasharray="0 7" stroke-linecap="round" fill="none"/><circle cx="183" cy="130" r="3.2" fill="#e0661e" stroke="none"/>
+        <g stroke="#7a5a22" stroke-width=".8">
+          <ellipse cx="141" cy="127" rx="4" ry="11" transform="rotate(-38 141 127)" fill="#2f6b4f"/><ellipse cx="159" cy="127" rx="4" ry="11" transform="rotate(38 159 127)" fill="#2f6b4f"/><ellipse cx="150" cy="122" rx="4" ry="12" fill="#3b8061"/>
+          <circle cx="150" cy="131" r="8" fill="#a9772f"/>
+          <rect x="142" y="138" width="16" height="7" fill="url(#gd)"/>
+          <path d="M136 176Q127 157 138 145H162Q173 157 164 176Z" fill="url(#gd)"/>
+          <path d="M133 160Q150 168 167 160" fill="none" stroke="#b4443a" stroke-width="3"/>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-text">
+      <div class="shubh">शुभ विवाह</div>
+      <div class="kicker">SAVE THE DATE</div>
+      <h1>Paras<em>&amp;</em>Jothi</h1>
+      <div class="date">02 · 12 · 2026</div>
+      <div class="place">DEHRADUN</div>
+    </div>
+  </div></div>
+  <div class="scroll">SCROLL</div>
+</header>
+
+<section class="block light">
+  <div class="inner rv">
+    <div class="eyebrow">A NEW CHAPTER</div>
+    <h2>Two hearts.<br><em>One journey.</em></h2>
+    <div class="orn">✦</div>
+    <p class="copy">Some journeys are meant to be shared. We’re beginning ours in the foothills of the Himalayas, and we’d love for you to be there when it starts.</p>
+  </div>
+</section>
+
+<section class="block dark">
+  <div class="inner rv">
+    <div class="eyebrow">COUNTING DOWN TO FOREVER</div>
+    <h2>See you soon.</h2>
+    <div class="countdown">
+      <div class="time"><div class="num" id="days">00</div><div class="label">DAYS</div></div>
+      <div class="time"><div class="num" id="hours">00</div><div class="label">HOURS</div></div>
+      <div class="time"><div class="num" id="minutes">00</div><div class="label">MINS</div></div>
+      <div class="time"><div class="num" id="seconds">00</div><div class="label">SECS</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block light">
+  <div class="inner rv">
+    <div class="eyebrow">THE CELEBRATION</div>
+    <h2>Join us in <em>Dehradun</em></h2>
+    <div class="card">
+      <div class="eyebrow" style="margin-bottom:0">WEDNESDAY · 2 DECEMBER 2026</div>
+      <h3>Sharda Wedding Point</h3>
+      <p>Hansuwala, Doiwala, Dehradun</p>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sharda%20Wedding%20Point%20Hansuwala%2C%20Doiwala%2C%20Uttarakhand%20248140" target="_blank" rel="noopener">Open in Maps</a>
+        <a class="btn alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Paras%20%26%20Jothi%27s%20Wedding&dates=20261202/20261203&location=Sharda%20Wedding%20Point%2C%20Hansuwala%2C%20Doiwala%2C%20Dehradun" target="_blank" rel="noopener">Add to Calendar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block dark">
+  <div class="inner rv">
+    <div class="eyebrow">WITH LOVE</div>
+    <h2>Paras &amp; Jothi</h2>
+    <div class="orn">✦</div>
+    <p class="copy">Mark your calendar. The best is yet to come.</p>
+    <div class="sign">02.12.2026 · Dehradun</div>
+  </div>
+</section>
+</main>
+
+<button class="music" id="music" aria-label="Music">♪</button>
+<audio id="song" preload="none" src=""></audio>
+
+<script>
+const wedding=new Date("2026-12-02T00:00:00+05:30").getTime(),$=id=>document.getElementById(id);
+function tick(){
+ const d=Math.max(0,wedding-Date.now()),p=n=>String(n).padStart(2,"0");
+ $("days").textContent=p(Math.floor(d/864e5));$("hours").textContent=p(Math.floor(d%864e5/36e5));
+ $("minutes").textContent=p(Math.floor(d%36e5/6e4));$("seconds").textContent=p(Math.floor(d%6e4/1e3));
+}
+tick();setInterval(tick,1000);
+
+const ridges=[...document.querySelectorAll(".ridge")];
+addEventListener("scroll",()=>{const y=Math.min(scrollY,innerHeight);ridges.forEach(r=>r.style.transform=`translateY(${-y*r.dataset.s}px)`)},{passive:true});
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.2});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+$("music").addEventListener("click",()=>{
+ alert("The selected song is ready to be connected. For the final version, upload the licensed audio file and I’ll make this button play/pause it.");
+});
+</script>
+</body>
+</html>
