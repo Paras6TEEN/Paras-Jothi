@@ -85,6 +85,8 @@ h2 em{color:var(--rose)}
 .sign{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:30px;margin-top:38px;color:var(--gold2)}
 .dark .copy{color:#d9d0c2}
 .music{position:fixed;right:16px;bottom:16px;z-index:20;border:1px solid rgba(214,178,110,.6);background:rgba(12,28,24,.7);backdrop-filter:blur(8px);color:var(--gold2);border-radius:50%;width:46px;height:46px;font-size:15px;cursor:pointer}
+.music.hint{animation:ring 2s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(214,178,110,.6)}100%{box-shadow:0 0 0 16px rgba(214,178,110,0)}}
 .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
 .rv.on{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.dust,.stars{animation:none}.rv{opacity:1;transform:none}}
@@ -192,8 +194,8 @@ h2 em{color:var(--rose)}
 </section>
 </main>
 
-<button class="music" id="music" aria-label="Music">♪</button>
-<audio id="song" preload="none" src=""></audio>
+<button class="music hint" id="music" aria-label="Music">♪</button>
+<audio id="song" src="music.mp3" loop preload="none"></audio>
 
 <script>
 const wedding=new Date("2026-12-02T00:00:00+05:30").getTime(),$=id=>document.getElementById(id);
@@ -210,8 +212,10 @@ addEventListener("scroll",()=>{const y=Math.min(scrollY,innerHeight);ridges.forE
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.2});
 document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 
-$("music").addEventListener("click",()=>{
- alert("The selected song is ready to be connected. For the final version, upload the licensed audio file and I’ll make this button play/pause it.");
+const song=$("song"),mb=$("music");
+mb.addEventListener("click",()=>{
+ if(song.paused){song.play().then(()=>{mb.textContent="❚❚";mb.classList.remove("hint")}).catch(()=>{mb.textContent="✕";setTimeout(()=>mb.textContent="♪",1500)})}
+ else{song.pause();mb.textContent="♪"}
 });
 </script>
 </body>
